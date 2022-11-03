@@ -26,7 +26,6 @@
     <ProjectReference Include="..\HHShops.Common\HHShops.Common.csproj" />
     <ProjectReference Include="..\HHShops.Data\HHShops.Data.csproj" />
     <ProjectReference Include="..\HHShops.Model\HHShops.Model.csproj" />
-    <ProjectReference Include="..\HHShops.Service\HHShops.Service.csproj" />
     <ProjectReference Include="..\HHShops.Web\HHShops.Web.csproj" />
   </ItemGroup>
 

@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +17,6 @@
     <ProjectReference Include="..\HHShops.Common\HHShops.Common.csproj" />
     <ProjectReference Include="..\HHShops.Data\HHShops.Data.csproj" />
     <ProjectReference Include="..\HHShops.Model\HHShops.Model.csproj" />
-    <ProjectReference Include="..\HHShops.Service\HHShops.Service.csproj" />
   </ItemGroup>
 
 </Project>
