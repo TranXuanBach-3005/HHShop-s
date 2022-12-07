@@ -1,6 +1,8 @@
-﻿namespace HHShops.Application.Repositories.IRepositories
+﻿using HHShops.Model.Entities;
+
+namespace HHShops.Application.Repositories.IRepositories
 {
-    public interface IPageRepository
+    public interface IPageRepository: IGenericRepository<Page>
     {
     }
 }

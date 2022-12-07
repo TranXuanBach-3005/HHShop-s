@@ -19,4 +19,12 @@
     <ProjectReference Include="..\HHShops.Model\HHShops.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="wwwroot\Assets\admin\" />
+    <Folder Include="wwwroot\Assets\client\" />
+    <Folder Include="wwwroot\Scripts\plugins\" />
+    <Folder Include="wwwroot\Scripts\spa\" />
+  </ItemGroup>
+
 </Project>

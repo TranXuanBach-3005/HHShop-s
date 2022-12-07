@@ -42,6 +42,18 @@ namespace HHShops.Application.DI
             services.AddScoped<IVisitorStatisticRepository, VisitorStatisticRepository>();
 
             services.AddScoped<IApplicationGroupService, ApplicationGroupService>();
+            services.AddScoped<IApplicationRoleService, ApplicationRoleService>();
+            services.AddScoped<ICommonService, CommonService>();
+            services.AddScoped<IContactDetailService, ContactDetailService>();
+            services.AddScoped<IErrorService, ErrorService>();
+            services.AddScoped<IFeedbackService, FeedbackService>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IPageService, PageService>();
+            services.AddScoped<IPostCategoryService, PostCategoryService>();
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<IProductCategoryService, ProductCategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IStatisticService, StatisticService>();
             //DbContext
             services.AddDbContext<hhShopDbContext>(options =>
                 options.UseSqlServer(configuration

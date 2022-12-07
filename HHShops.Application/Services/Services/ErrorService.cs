@@ -1,16 +1,20 @@
 ﻿using HHShops.Application.Services.IServices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HHShops.Application.Unitofworks;
+using HHShops.Model.Entities;
 
 namespace HHShops.Application.Services.Services
 {
     public class ErrorService : IErrorService
     {
-        public ErrorService()
+        private readonly IUnitOfWork _unitOfWork;
+        public ErrorService(IUnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
+        }
+
+        public async Task<Error> CreateAsync(Error error)
+        {
+            return await _unitOfWork.ErrorRepository.CreateAsync(error);
         }
     }
 }
