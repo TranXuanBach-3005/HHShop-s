@@ -1,11 +1,16 @@
+using HHShops.Application.DI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+var configuration = builder.Configuration;
+builder.Services.AddInfrastructuresService(configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
